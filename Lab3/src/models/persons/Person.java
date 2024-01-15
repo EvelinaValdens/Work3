@@ -3,8 +3,11 @@ package models.persons;
 public abstract class Person {
     protected String name;
 
-    protected Person(String name) {
+   private Profession profession;
+
+    public Person(String name, Profession profession) {
         this.name = name;
+        this.profession = profession;
     }
     public void speak(String words) {
         System.out.println(name + " говорит, \"" + words + "\"");
@@ -21,6 +24,10 @@ public abstract class Person {
     public String getName() {
         return name;
     }
+     public Profession getProfession(){
+         return profession;
+     }
+
 
     public void setName(String name) {
         this.name = name;
