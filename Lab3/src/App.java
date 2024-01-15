@@ -15,7 +15,7 @@ public class App {
         Louis louis = new Louis("Луис");
         Doctor doctor = new Doctor("Доктор");
         Rachel rachel = new Rachel("Рэчел", new Cat("Черч"));
-        Veterinarian veterinarian = new Veterinarian("Ветеринар");
+        Veterinarian veterinarian = new Veterinarian("", Profession.VETERINAR);
         Car hondaCivic = new Car("хонда-сивик", 4);
         Zelda zelda = new Zelda("Зельда");
         Motorcycle motorcycle = new Motorcycle("Мотоцикл");
