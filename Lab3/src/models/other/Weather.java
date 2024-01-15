@@ -19,20 +19,4 @@ public class Weather {
         }
         System.out.println("Небо было голубым и " + skyCondition + ", температура " + temperature + " градуса.");
     }
-
-    public int getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(int temperature) {
-        this.temperature = temperature;
-    }
-
-    public WeatherStatus getSkyCondition() {
-        return skyCondition;
-    }
-
-    public void setSkyCondition(WeatherStatus skyCondition) {
-        this.skyCondition = skyCondition;
-    }
 }
