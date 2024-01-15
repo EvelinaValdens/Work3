@@ -18,9 +18,5 @@ public class Doctor extends Person {
         public PersonalMemories(String memory) {
             this.memory = memory;
         }
-
-        public void recallMemory() {
-            System.out.println("Вспоминая: " + memory);
-        }
     }
 }
