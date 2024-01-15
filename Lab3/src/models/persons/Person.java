@@ -1,9 +1,9 @@
 package models.persons;
 
 public abstract class Person {
-    private String name;
+    protected String name;
 
-    public Person(String name) {
+    protected Person(String name) {
         this.name = name;
     }
     public void speak(String words) {
