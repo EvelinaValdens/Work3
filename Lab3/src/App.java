@@ -1,3 +1,5 @@
+import enums.Feellings;
+import enums.Profession;
 import enums.Seasons;
 import enums.WeatherStatus;
 import exceptions.NoEmptySpaces;
@@ -12,12 +14,12 @@ import models.vechicles.Motorcycle;
 
 public class App {
     public static void main(String[] args) {
-        Louis louis = new Louis("Луис");
-        Doctor doctor = new Doctor("Доктор");
-        Rachel rachel = new Rachel("Рэчел", new Cat("Черч"));
+        Louis louis = new Louis("Луис", Profession.UNKNOWN);
+        Doctor doctor = new Doctor("Доктор", Profession.UNKNOWN);
+        Rachel rachel = new Rachel("Рэчел", Profession.UNKNOWN, new Cat("Черч"));
         Veterinarian veterinarian = new Veterinarian("", Profession.VETERINAR);
         Car hondaCivic = new Car("хонда-сивик", 4);
-        Zelda zelda = new Zelda("Зельда");
+        Zelda zelda = new Zelda("Зельда", Profession.UNKNOWN);
         Motorcycle motorcycle = new Motorcycle("Мотоцикл");
         Weather currentWeather = new Weather(72, WeatherStatus.CLEAR);
         University university = new University("Университет");
