@@ -1,11 +1,12 @@
 package models.persons;
 
+import enums.Profession;
 import models.animals.Animal;
 
 public class Rachel extends Person {
     private Animal animal;
-    public Rachel(String name, Animal animal) {
-        super(name);
+    public Rachel(String name, Profession profession, Animal animal) {
+        super(name, profession);
         this.animal = animal;
     }
 
