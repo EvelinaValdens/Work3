@@ -1,14 +1,14 @@
 package models.persons;
 
+import enums.Feellings;
+import enums.Profession;
 import exceptions.NoEmptySpaces;
 import interfaces.MoveAction;
 import models.other.University;
 import models.vechicles.Car;
 
 public class Louis extends Person {
-    public Louis(String name) {
-        super(name);
-    }
+    public Louis(String name, Profession profession) {super(name, profession);}
 
     public void driveCar(Car car, University university) {
         System.out.println(getName() + " ведет " + car.getModel() + " в сторону " + university + ".");
@@ -16,14 +16,17 @@ public class Louis extends Person {
     }
 
     public void listenToMusic(String song) {
+        setFeellings(Feellings.VERYHAPPY);
         System.out.println(getName() + " прибавил звук и запел " + song + " плохо, но с большим удовольствием.");
     }
 
     public Louis kiss(Person person) {
+        setFeellings(Feellings.HAPPY);
         System.out.println(getName() + " целует " + person.getName());
         return this;
     }
     public Louis leaves(){
+        setFeellings(Feellings.ASTONISHMENT);
         System.out.println(getName() + " выходит.");
         return this;
     }
