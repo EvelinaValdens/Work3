@@ -1,8 +1,10 @@
 package models.persons;
 
+import enums.Profession;
+
 public class Zelda extends Person{
-    public Zelda(String name) {
-        super(name);
+    public Zelda(String name, Profession profession) {
+        super(name, profession);
     }
 
     public void haunt(Louis louis) {
